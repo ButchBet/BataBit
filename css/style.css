@@ -25,3 +25,9 @@ font-family: 'Inter', sans-serif; */
     --off-white: #FAF8F7;
     --just-white: #FFFFFF;
 }
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+    font-family: 'DM Sans', sans-serif;
+}
+
