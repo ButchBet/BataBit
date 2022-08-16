@@ -20,7 +20,7 @@ This is a solution to the [Responsive Design Course: Mobile First Layout](https:
 
 ### Links
 - Solution URL: [GitHub](https://github.com/ButchBet/BataBit)
-- Live Site URL: [Google](https://butchbet.github.io/BataBit/)
+- Live Site URL: [BataBit](https://butchbet.github.io/BataBit/)
 
 ### Built with
 - Figma
