@@ -14,7 +14,6 @@ font-family: 'Inter', sans-serif; */
 
 :root {
     /* Colors */
-    --linear-BG: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
     --bitcoin-orange: #F7931A;
     --soft-orange: #FFE9D5;
     --secondary-blue: #1A9AF7;
@@ -31,3 +30,112 @@ html {
     font-family: 'DM Sans', sans-serif;
 }
 
+/* 1. Position */
+header {
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+header .call-to-action {
+    position: absolute;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+header .call-to-action figure img {
+    transform: rotate(90deg);
+}
+
+/* 2. Box model  */
+header {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 320px;
+    gap: 20px;
+    padding-top: 34px;
+    padding-bottom: 40px;
+}
+
+header figure,
+header h1,
+header .sub-title {
+    margin: 0;
+    padding: 0;
+}
+
+header figure img {
+    width: 128.57px;
+    height: 24.01px;
+    box-sizing: border-box;
+}
+
+header .call-to-action {
+    width: 229px;
+    height: 48px;
+    padding: 15px 16px;
+    gap: 15px;
+    box-sizing: border-box;
+    top: calc(100% - 24px);
+}
+
+header .call-to-action .call-to-action-figure {
+    width: 7px;
+    height: 12px;
+    margin: 0;
+}
+header .call-to-action .call-to-action-figure img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 3. Typography */
+header h1 {
+    font-weight: 700;
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+header p {
+    font-weight: 500;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+header .call-to-action .call-to-action-figure p {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+/* 4. Visual */
+header {
+    background: linear-gradient(207.8deg, var(--warm-black) 16.69%, var(--bitcoin-orange) 100%);
+}
+
+header h1 {
+    color: var(--just-white);
+}
+
+header p {
+    color: var(--soft-orange);
+}
+
+header .call-to-action {
+    background: var(--off-white);
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+    border-radius: 4px;
+}
+
+header .call-to-action p {
+    color: var(--warm-black);
+}
+
+/* 5. Other */
+header .call-to-action {
+    cursor: pointer;
+}
