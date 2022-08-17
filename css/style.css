@@ -129,6 +129,10 @@ html {
     align-content: space-between;
 }
 
+.main .main__section .main--absolute {
+    position: absolute;
+}
+
 /* 2. Box model  */
 /*<--- HEADER --------------------------------------------------------------------->*/
 .header {
@@ -167,10 +171,6 @@ html {
     height: 100%;
 }
 
-.main .main__section .pros .pros__card {
-    padding: 16px;
-}
-
 /*<--- MAIN ----------------------------------------------------------------------->*/
 .main {
     /* padding: 0 10px; */
@@ -185,7 +185,7 @@ html {
     gap: 32px;
 }
 
-.main  .main--notpadding {
+.main .main--notpadding {
     padding: 0;
 }
 
@@ -265,6 +265,7 @@ html {
 
 .main .main__section .pros .pros__card {
     width: 268px;
+    padding: 16px;
 }
 
 .main .main__section .pros .pros__card .pros__figure {
@@ -277,6 +278,16 @@ html {
     width: 100%;
     height: 100%;
 }
+
+.main .main__section .main--longer {
+    width: 100%;
+    height: 387px;
+}
+
+.main .main__section .main--absolute {
+    top: 65px;
+}
+
 
 /* 3. Typography */
 /*<--- HEADER --------------------------------------------------------------------->*/
@@ -408,6 +419,10 @@ html {
     color: var(--secondary-blue)
 }
 
+.main .main__section .currencyandfees .currencyandfees__card .currencyandfees__container {
+    background: #E5E5E54F;
+}
+
 .main .main__section .currencyandfees .currencyandfees__card .currencyandfees__container .currencyandfees__coinfee .currencyandfees__name {
     color: #B5B0AC;
 }
@@ -451,6 +466,10 @@ html {
     color: #808080;
 }
 
+.main .main__section .main--titlewhite {
+    color: var(--just-white);
+}
+
 /* 5. Other */
 .header .action {
     cursor: pointer;
@@ -458,7 +477,6 @@ html {
 
 /*<--- MAIN ----------------------------------------------------------------------->*/
 .main .main__section .currencyandfees .currencyandfees__card .currencyandfees__container {
-    background: #E5E5E54F;
     border-radius: 4px;
 }
 
