@@ -21,6 +21,7 @@ font-family: 'Inter', sans-serif; */
     --warm-black: #201E1C;
     --warm-black-plus-1: #282623;
     --grey: #BABABA;
+    --dark-grey: #757575;
     --off-white: #FAF8F7;
     --just-white: #FFFFFF;
 }
@@ -30,6 +31,10 @@ html {
     font-family: 'DM Sans', sans-serif;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
 /* 1. Position */
 /*<--- HEADER --------------------------------------------------------------------->*/
 .header {
@@ -53,8 +58,57 @@ html {
     transform: rotate(90deg);
 }
 
-/*<--- MAIN ----------------------------------------------------------------------->*/
 
+/*<--- MAIN ----------------------------------------------------------------------->*/
+.main .main__section {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .main__section .currencyandfees {
+    display: flex;
+}
+
+.main .main__section .currencyandfees .currencyandfees__arrow {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main .main__section .currencyandfees .currencyandfees--left {
+    justify-content: flex-start;
+}
+
+.main .main__section .currencyandfees .currencyandfees__arrow .currencyandfees--left {
+    transform: rotate(180deg);
+}
+
+.main .main__section .currencyandfees .currencyandfees__card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.main .main__section .currencyandfees .currencyandfees__card .currencyandfees__container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main .main__section .currencyandfees .currencyandfees__card .currencyandfees__container .currencyandfees__coinfee {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .main__section .currencyandfees .currencyandfees__card .currencyandfees__updated {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
 
 /* 2. Box model  */
 /*<--- HEADER --------------------------------------------------------------------->*/
@@ -63,15 +117,10 @@ html {
     width: 100%;
     min-width: 320px;
     gap: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-top: 34px;
     padding-bottom: 40px;
-}
-
-.header .header__figure,
-.header .header__title,
-.header .sub-title {
-    margin: 0;
-    padding: 0;
 }
 
 .header .header__figure .header__img {
@@ -100,7 +149,68 @@ html {
 }
 
 /*<--- MAIN ----------------------------------------------------------------------->*/
+.main {
+    padding: 0 10px;
+}
+.main .main__section {
+    padding: 60px 0;
+    box-sizing: border-box;
+    gap: 30px;
+}
 
+.main  .main--notpadding {
+    padding: 0;
+}
+
+.main .main__section .main__figure {
+    width: 195px;
+    height: 195px;
+}
+
+.main .main__figure .main__img {
+    width: 100%;
+    height: 100%;
+}
+
+.main .main__section .currencyandfees {
+    width: 235px;
+}
+
+.main .main__section .currencyandfees .currencyandfees__arrow {
+    width: 22.5px;
+}
+
+.main .main__section .currencyandfees .currencyandfees__arrow .currencyandfees__img {
+    width: 9px;
+    height: 11.41px;
+}
+
+.main .main__section .currencyandfees .currencyandfees__card {
+    width: 190px;
+}
+
+.main .main__section .currencyandfees .currencyandfees__card .currencyandfees__title {
+    margin-left: 8px;
+}
+
+.main .main__section .currencyandfees .currencyandfees__card .currencyandfees__container .currencyandfees__coinfee {
+    padding: 6px 8px;
+}
+
+.main .main__section .currencyandfees .currencyandfees__card .currencyandfees__container .currencyandfees__coinfee .currencyandfees__trenddirection {
+    width: 12px;
+    height: 12px;
+}
+
+.main .main__section .currencyandfees .currencyandfees__card .currencyandfees__container .currencyandfees__coinfee .currencyandfees__trend {
+    width: 100%;
+    height: 100%;
+}
+
+.main .main__section .currencyandfees .currencyandfees__card .currencyandfees__updated {
+    padding: 6px;
+    gap: 10px;
+}
 
 /* 3. Typography */
 /*<--- HEADER --------------------------------------------------------------------->*/
@@ -122,7 +232,49 @@ html {
 }
 
 /*<--- MAIN ----------------------------------------------------------------------->*/
+.main .main__section .main__title {
+    font-size: 2.4rem;
+    font-family: 700;
+    text-align: center;
+}
 
+.main .main__section .main__text {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.main .main__section .currencyandfees .currencyandfees__card .currencyandfees__title {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.main .main__section .currencyandfees .currencyandfees__card .currencyandfees__container{
+    font-family: 'Inter';
+}
+
+.main .main__section .currencyandfees .currencyandfees__card .currencyandfees__container .currencyandfees__coinfee .currencyandfees__name {
+    font-size: 1.6rem;
+    font-weight: 500;   
+}
+
+.main .main__section .currencyandfees .currencyandfees__card .currencyandfees__container .currencyandfees__coinfee .currencyandfees__price {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.main .main__section .currencyandfees .currencyandfees__card .currencyandfees__updated {
+    font-family: 'Inter';
+}
+
+.main .main__section .currencyandfees .currencyandfees__card .currencyandfees__updated .currencyandfees__subtitle {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.main .main__section .currencyandfees .currencyandfees__card .currencyandfees__updated .currencyandfees__text {
+    font-size: 1.2rem;
+}
 
 /* 4. Visual */
 /*<--- HEADER --------------------------------------------------------------------->*/
@@ -148,9 +300,51 @@ html {
     color: var(--warm-black);
 }
 
-
 /*<--- MAIN ----------------------------------------------------------------------->*/
+.main {
+    background: var(--just-white);
+}
 
+.main .main__section {
+    background: inherit;
+}
+
+.main .main--warmblack {
+    background: var(--warm-black);
+}
+
+.main .main__section .main__title {
+    color: var(--warm-black);
+}
+
+.main .main__section .main__text {
+    color: var(--dark-grey);
+}
+
+.main .main__section .currencyandfees .currencyandfees__card .currencyandfees__title {
+    color: var(--bitcoin-orange);
+}
+
+.main .main__section .currencyandfees .currencyandfees__card .currencyandfees--blue {
+    color: var(--secondary-blue)
+}
+
+.main .main__section .currencyandfees .currencyandfees__card .currencyandfees__container .currencyandfees__coinfee .currencyandfees__name {
+    color: #B5B0AC;
+}
+
+.main .main__section .currencyandfees .currencyandfees__card .currencyandfees__container .currencyandfees__coinfee .currencyandfees__price {
+    color: #757575;
+}
+
+.main .main__section .currencyandfees .currencyandfees__card .currencyandfees__updated {
+    background: var(--soft-orange);
+    border-radius: 8px;
+}
+
+.main .main__section .currencyandfees .currencyandfees__card .currencyandfees--backblue {
+    background: var(--soft-blue);
+}
 
 /* 5. Other */
 .header .action {
@@ -158,3 +352,16 @@ html {
 }
 
 /*<--- MAIN ----------------------------------------------------------------------->*/
+.main .main__section .currencyandfees .currencyandfees__card .currencyandfees__container {
+    background: #E5E5E54F;
+    border-radius: 4px;
+}
+
+.main .main__section .currencyandfees .currencyandfees__arrow {
+    cursor: pointer;
+}
+
+
+.hidden {
+    display: none !important;
+}
