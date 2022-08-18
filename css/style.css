@@ -133,6 +133,30 @@ html {
     position: absolute;
 }
 
+/*<--- FOOTER --------------------------------------------------------------------->*/
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.footer .footer__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer .figureandtext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer .figureandtext .figureandtext__text  {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
 /* 2. Box model  */
 /*<--- HEADER --------------------------------------------------------------------->*/
 .header {
@@ -292,6 +316,30 @@ html {
     top: 65px;
 }
 
+/*<--- FOOTER --------------------------------------------------------------------->*/
+.footer {
+    padding: 40px 65px;
+    gap: 52px;
+}
+
+.footer .footer__list,
+.footer .figureandtext {
+    gap: 8px;
+}
+
+.footer .figureandtext .figureandtext__figure {
+    width: 40.57px;
+    height: 24px;
+}
+
+.footer .figureandtext .figureandtext__figure .figureandtext__img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer .figureandtext .figureandtext__text {
+    width: 64px;
+}
 
 /* 3. Typography */
 /*<--- HEADER --------------------------------------------------------------------->*/
@@ -357,7 +405,6 @@ html {
     font-size: 1.2rem;
 }
 
-
 .main .main__section .pros .pros__card .pros__title {
     font-size: 1.8rem;
     font-weight: 700;
@@ -366,6 +413,16 @@ html {
 
 .main .main__section .pros .pros__card .pros__text {
     font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.footer .footer__list .footer__item .footer__link {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.footer .figureandtext .figureandtext__text .figureandtext__paragraph {
+    font-size: .8rem;
     font-weight: 500;
 }
 
@@ -472,6 +529,25 @@ html {
 
 .main .main__section .main--titlewhite {
     color: var(--just-white);
+}
+
+/*<--- FOOTER --------------------------------------------------------------------->*/
+.footer {
+    background: var(--bitcoin-orange);
+}
+
+.footer .footer__list {
+    list-style: none;
+}
+
+.footer .footer__list .footer__item .footer__link {
+    color: var(--just-white);
+    text-decoration: none;
+
+}
+
+.footer .figureandtext .figureandtext__text .figureandtext__paragraph {
+    color: var(--soft-orange);
 }
 
 /* 5. Other */
