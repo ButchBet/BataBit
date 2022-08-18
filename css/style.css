@@ -181,6 +181,10 @@ html {
     gap: 30px;
 }
 
+.main .main__lessgap {
+    gap: 24px;
+}
+
 .main .main--moregap {
     gap: 32px;
 }
