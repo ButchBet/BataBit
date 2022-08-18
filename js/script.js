@@ -19,3 +19,9 @@ rightArrow.addEventListener("click", (e) => {
     rightArrow.classList.add("hidden");
     leftArrow.classList.remove("hidden");
 });
+
+//Script to set the current year in the footer
+const footerYear = document.getElementById("year");
+const year = new Date().getFullYear();
+
+footerYear.innerHTML= year.toString();
