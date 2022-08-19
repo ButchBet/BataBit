@@ -741,6 +741,10 @@ html {
     cursor: pointer;
 }
 
+.main .main__section .plans {
+    user-select: none;
+}
+
 .hidden {
     display: none !important;
 }
