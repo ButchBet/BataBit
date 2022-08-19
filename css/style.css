@@ -70,7 +70,8 @@ html {
     position: relative;
 }
 
-.main .main__section .currencyandfees {
+.main .main__section .currencyandfees,
+.main .plans {
     display: flex;
 }
 
@@ -84,7 +85,8 @@ html {
     justify-content: flex-start;
 }
 
-.main .main__section .currencyandfees .currencyandfees__arrow .currencyandfees--left {
+.main .main__section .currencyandfees .currencyandfees__arrow .currencyandfees--left,
+.main .main__section .plans .plans--rote {
     transform: rotate(180deg);
 }
 
@@ -131,6 +133,40 @@ html {
 
 .main .main__section .main--absolute {
     position: absolute;
+}
+
+.main .main__section .plans {
+    justify-content: space-between;
+    align-content: center;
+}
+
+.main .main__section .plans .plans__figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .main__section .plans .plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.main .main__section .plans .plan .plan__suggested {
+    position: absolute;
+}
+
+.main .main__section .plans .plan .plan__signandprice {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.main .main__section .plans .plan .plan__action {
+    display: flex;
+    gap: 16px;
+    align-items: center;
 }
 
 /*<--- FOOTER --------------------------------------------------------------------->*/
@@ -215,6 +251,11 @@ html {
 
 .main .main--notpadding {
     padding: 0;
+}
+
+.main .main--notleftrightpadding {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .main .main__section .main__figure {
@@ -316,6 +357,59 @@ html {
     top: 65px;
 }
 
+.main .main__section .plans {
+    width: 100%;
+    gap: 10px;
+}
+
+.main .main__section .plans .plans__figure {
+    width: 54px;
+}
+
+.main .main__section .plans .plans__img {
+    width: 8px;
+    height: 12px;
+}
+
+.main .main__section .plans .plan {
+    padding: 24px 16px;
+    gap: 8px;
+    box-sizing: border-box;
+    width: 190px;
+}
+
+.main .main__section .plans .plan .plan__suggested {
+    padding: 8px;
+    top: -16px;
+}
+
+.main .main__section .plans .plan .plan__signandprice {
+    gap: 4px
+}
+
+.main .main__section .plans .plan .plan__signandprice,
+.main .main__section .plans .plan .plan__description {
+    margin-bottom: 8px;
+}
+
+.main .main__section .plans .plan .plan__signandprice .plan__sign {
+    padding-top: 12px;
+}
+
+.main .main__section .plans .plan .plan__action {
+    padding: 12px 16px;
+}
+
+.main .main__section .plans .plan .plan__figure {
+    width: 24px;
+    height: 24px;
+}
+
+.main .main__section .plans .plan .plan__figure .plan__img {
+    width: 100%;
+    height: 100%;
+} 
+
 /*<--- FOOTER --------------------------------------------------------------------->*/
 .footer {
     padding: 40px 65px;
@@ -416,6 +510,41 @@ html {
     font-weight: 500;
 }
 
+.main .main__section .plans .plan .plan__suggested {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.main .main__section .plans .plan .plan__title {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.main .main__section .plans .plan .plan__price {
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.main .main__section .plans .plan .plan__signandprice .plan__sign {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.main .main__section .plans .plan .plan__description {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.main .main__section .plans .plan .plan__action .plan__text {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+/*<--- FOOTER --------------------------------------------------------------------->*/
 .footer .footer__list .footer__item .footer__link {
     font-size: 1.4rem;
     font-weight: 500;
@@ -425,6 +554,8 @@ html {
     font-size: .8rem;
     font-weight: 500;
 }
+
+
 
 /* 4. Visual */
 /*<--- HEADER --------------------------------------------------------------------->*/
@@ -531,6 +662,50 @@ html {
     color: var(--just-white);
 }
 
+.main .main__section .plans {
+}
+
+.main .main__section .plans .plans__figure {
+    border-radius: 8px 0 0 8px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.main .main__section .plans .plans--radiusright {
+    border-radius: 0 8px 8px 0px;
+}
+
+.main .main__section .plans .plan {
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border-radius: 8px;
+}
+
+.main .main__section .plans .plans__img {
+    fill: #BABABA;
+}
+
+.main .main__section .plans .plan .plan__suggested {
+    color: var(--just-white);
+    background: var(--bitcoin-orange);
+    border-radius:8px;
+}
+
+.main .main__section .plans .plan .plan__signandprice .plan__sign {
+    color: #363636;
+}
+
+.main .main__section .plans .plan .plan__description {
+    color: #757575;
+}
+
+.main .main__section .plans .plan .plan__action {
+    border: 2px solid var(--bitcoin-orange);
+    background: var(--soft-orange);
+}
+
+.main .main__section .plans .plan .plan__action .plan__text {
+    color: var(--warm-black);
+}
+
 /*<--- FOOTER --------------------------------------------------------------------->*/
 .footer {
     background: var(--bitcoin-orange);
@@ -551,7 +726,8 @@ html {
 }
 
 /* 5. Other */
-.header .action {
+.header .action,
+.main .main__section .plans .plans__img {
     cursor: pointer;
 }
 
@@ -560,10 +736,10 @@ html {
     border-radius: 4px;
 }
 
-.main .main__section .currencyandfees .currencyandfees__arrow .currencyandfees__img {
+.main .main__section .currencyandfees .currencyandfees__arrow .currencyandfees__img,
+.main .main__section .plans .plan .plan__action {
     cursor: pointer;
 }
-
 
 .hidden {
     display: none !important;
