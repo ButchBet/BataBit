@@ -90,3 +90,16 @@ plansRightArrow.addEventListener("click", (e) => {
             position = 0;
     }
 });
+
+
+// Script to change the size of height of the eyes bitcoin image
+window.addEventListener("resize", (e) => {
+    console.log("resized");
+
+    const eyeBitcoin = document.getElementById("eyes-bitcoin");
+
+    const x = eyeBitcoin.scrollWidth;
+    const y = x + 67;
+
+    eyeBitcoin.style.height = `${y}px`;
+})
