@@ -1,0 +1,13 @@
+ .main .main--column {
+    flex-flow: row;
+}
+
+
+.main .main__section .main__figure {
+    display: none;
+}
+
+/*
+.main .main__section .main__description {
+    width: 100%;
+} */
