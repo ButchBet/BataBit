@@ -39,6 +39,13 @@ html {
 }
 /* 1. Position */
 /*<--- HEADER --------------------------------------------------------------------->*/
+/* 
+body  {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+} */
+
 .header {
     position: relative;
     display: flex;
@@ -413,6 +420,7 @@ html {
 /*<--- FOOTER --------------------------------------------------------------------->*/
 .footer {
     padding: 40px 65px;
+    /* width: 100%; */
     gap: 52px;
 }
 
@@ -434,6 +442,13 @@ html {
 .footer .figureandtext .figureandtext__text {
     width: 64px;
 }
+
+/* .header,
+.main,
+.footer {
+    max-width: 1000px;
+} */
+
 
 /* 3. Typography */
 /*<--- HEADER --------------------------------------------------------------------->*/
