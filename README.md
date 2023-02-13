@@ -1,15 +1,10 @@
-# Platzi - BataBit
+BataBit
 
 ## Table of contents
 
-- [Overview](#overview)
 - [Links](#links)
 - [Built with](#built-with)
 - [Author](#author)
-
-
-## Overview
-This is a solution to the [Responsive Design Course: Mobile First Layout](https://platzi.com/cursos/mobile-first/). This was created with my own knowledge as a challenge, at the end I whached the course to get some methods and learn new things.
 
 ## Links
 - Solution URL: [GitHub](https://github.com/ButchBet/BataBit)
